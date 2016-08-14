@@ -1,0 +1,5 @@
+1. FAQ:
+Сколько времени занимает? 10-20 мин.
+Имеет ли данная выписка юридическую силу? Да
+
+2. Use PayU : https://github.com/MicroPyramid/django-payu
