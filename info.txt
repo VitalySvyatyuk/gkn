@@ -2,4 +2,9 @@
 Сколько времени занимает? 10-20 мин.
 Имеет ли данная выписка юридическую силу? Да
 
-2. Use PayU : https://github.com/MicroPyramid/django-payu
+2. Use RoboKassa: https://bitbucket.org/TheDeadOne/django-robokassa
+
+3. КЛЮЧИ ДОСТУПА  --   ГКН с 25.06.2015 г. - b087df48-7b97-485a-b2ce-b4a35f214e79
+                      ЕГРП с 17.05.2016 г. - 053cab9a-3fe7-4ceb-a39f-58e96aed16cd
+
+
