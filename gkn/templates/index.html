@@ -3,48 +3,35 @@
 {% block content %}
 	<div class="container">
 
-		<div class="row">
-  		<div class="col-md-3 col-xs-6">
-  		<form>
-  			<div class="form-group">
-  				<label for="region">Регион:</label>
-  				<input type="text" class="form-control" id="region" placeholder="Регион земельного участка">
-  			</div>
-  			<div class="form-group">
-  				<label for="rayon">Район:</label>
-  				<input type="text" class="form-control" id="rayon" placeholder="Район">
-  			</div>
-  			<div class="form-group">	
-  				<label for="punkt">Населённый пункт:</label>
-  				<input type="text" class="form-control" id="punkt" placeholder="Населённый пункт">
-  			</div>
-  			<div class="form-group">	
-					<label for="ulitsa">Улица:</label>
-  				<input type="text" class="form-control" id="ulitsa" placeholder="Улица">
-  			</div>
-  			<div class="form-group col-md-6">
-  				<label for="dom">Дом:</label>
-  				<input type="text" class="form-control" id="dom" placeholder="Дом">
-  			</div>
-  			<div class="form-group col-md-6">
-  				<label for="stroenie">Строение:</label>
-  				<input type="text" class="form-control" id="stroenie" placeholder="Строение">
-  			</div>
-  			<div class="form-group col-md-6">
-  				<label for="korpus">Корпус:</label>
-  				<input type="text" class="form-control" id="korpus" placeholder="Корпус">
-  			</div>
-  			<div class="form-group col-md-6">
-  				<label for="kvartira">Квартира:</label>
-  				<input type="text" class="form-control" id="kvartira" placeholder="Квартира">
-  			</div>
-  			<input type="submit" value="Заказать">
-  		</form>
+
+
+		<div class="row tab-content">
+      <ul class="nav nav-tabs nav-justified">
+        <li role="presentation" class="active"><a href="#EGRP" data-toggle="tab">ЕГРП</a></li>
+        <li role="presentation"><a href="#GKN" data-toggle="tab">ГКН</a></li>
+      </ul>
+
+  		<div class="tab-pane fade active in col-md-12" id="EGRP">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <h4>Заказ выписки из ЕГРП:</h4>
+          {% include "form_EGRP_addr.html" %}
+        </div>
+        <div class="col-md-4"></div>
   		</div>
-  		<div class="col-md-3 col-xs-6">table 2</div>
-  		<div class="col-md-3">table 3</div>
-  		<div class="col-md-3">table 4</div>
+
+      <div class="tab-pane fade col-md-12" id="GKN">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <h4>Заказ выписки из ГКН:</h4>
+          {% include "form_GKN_addr.html" %}
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
 		</div>
 
 	</div>
+
+
 {% endblock %}
