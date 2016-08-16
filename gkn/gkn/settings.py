@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+ROBOKASSA_LOGIN = 'admin'
+ROBOKASSA_PASSWORD1 = 'cuc21sal'
 
 # Application definition
 
@@ -37,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'robokassa',
+    'gkn',
 ]
 
 MIDDLEWARE = [
