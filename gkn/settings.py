@@ -87,13 +87,21 @@ WSGI_APPLICATION = 'gkn.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'gkn',            
+    #     'USER': 'django',            
+    #     'PASSWORD': 'django',            
+    #     'HOST': 'localhost',            
+    #     'PORT': '',            
+    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'gkn',            
-        'USER': 'django',            
+        'NAME': 'dbt00ev715353g',            
+        'USER': 'ywlfidjtgdwpyo',            
         'PASSWORD': 'django',            
-        'HOST': 'localhost',            
-        'PORT': '',            
+        'HOST': 'ec2-54-204-37-135.compute-1.amazonaws.com',            
+        'PORT': '5432',            
     }
 }
 
