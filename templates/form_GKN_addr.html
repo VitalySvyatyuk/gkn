@@ -1,4 +1,4 @@
-<form action="{{ form.target }}" method="post">
+<form action="{{ form.target }}" method="POST">  
   <div class="form-group">
     <label for="region">Регион:</label>
     <input type="text" class="form-control" id="region" placeholder="Регион земельного участка">
@@ -31,7 +31,5 @@
     <label for="kvartira">Квартира:</label>
     <input type="text" class="form-control" id="kvartira" placeholder="Квартира">
   </div>
-  {% csrf_token %}
-  <p>{{ form.as_p }}</p>
   <input type="submit" class="btn btn-default" value="Заказать">
 </form>

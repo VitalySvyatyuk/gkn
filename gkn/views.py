@@ -5,12 +5,7 @@ from robokassa.forms import RobokassaForm
 from .models import Order
 
 
-def index(request):
-    return render(request, 'index.html')
-
-
-# @login_required
-def pay_with_robokassa(request, order_id=1):
+def index(request, order_id=1):
     print 'dgdfg'
     order = get_object_or_404(Order, pk=order_id)
 
@@ -23,4 +18,4 @@ def pay_with_robokassa(request, order_id=1):
                # 'Culture': 'ru'
            })
 
-    return render(request, 'pay_with_robokassa.html', {'form': form})
+    return render(request, 'index.html', {'form': form})
