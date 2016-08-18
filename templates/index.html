@@ -3,30 +3,46 @@
 {% block content %}
 	<div class="container">
 
+    <ul class="nav nav-tabs nav-justified" role="tablist">
 
+      <li class="nav-item active" role="presentation">
+        <a class="nav-link" href="#EGRP" data-toggle="tab" role="tab">
+          Заказать выписку из ЕГРП
+        </a>
+      </li>
 
-		<div class="row tab-content">
-      <ul class="nav nav-tabs nav-justified">
-        <li role="presentation" class="active"><a href="#EGRP" data-toggle="tab">ЕГРП</a></li>
-        <li role="presentation"><a href="#GKN" data-toggle="tab">ГКН</a></li>
-      </ul>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#GKN" data-toggle="tab" role="tab">
+          Заказать кадастровую выписку
+        </a>
+      </li>
 
-  		<div class="tab-pane fade active in col-md-12" id="EGRP">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <h4>Заказ выписки из ЕГРП:</h4>
+    </ul>
+
+		<div class="tab-content">
+
+  		<div class="row tab-pane fade in active background" id="EGRP" role="tabpanel">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 formmargin">
           {% include "form_EGRP_addr.html" %}
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4 questiontop">
+          {% include "questions.html" %}
+        </div>
+        <div class="col-md-1"></div>
   		</div>
 
-      <div class="tab-pane fade col-md-12" id="GKN">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <h4>Заказ выписки из ГКН:</h4>
+      <div class="row tab-pane fade background" id="GKN" role="tabpanel">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 questiontop">
+          {% include "questions.html" %}
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4 formmargin">
           {% include "form_GKN_addr.html" %}
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-1"></div>
       </div>
 
 		</div>

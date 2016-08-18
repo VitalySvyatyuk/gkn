@@ -13,5 +13,53 @@
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     border-radius: 0px 0px 5px 5px;
-    padding: 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.question {
+    margin-top: 15px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color: #ff7899;
+}
+
+.answer {
+    margin-left: 40px;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color:hsla(204, 100%, 50%, 0.435);
+}
+
+/*.h4 {
+    margin: 15px 15px;
+    border-radius: 5px;
+}*/
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover,
+.background {
+    background-color: #ffc;
+}
+
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus,
+.nav-tabs.nav-justified>.active>a:hover {
+    border-bottom-color: #ffc;
+}
+
+.formmargin {
+    margin: 15px 0px 15px 0px;
+}
+
+.questiontop {
+    margin-top: 25px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
 }

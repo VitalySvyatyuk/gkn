@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 ROBOKASSA_LOGIN = 'gkngkn'
 ROBOKASSA_PASSWORD1 = 'cuc21sal'
 ROBOKASSA_STRICT_CHECK = False
-ROBOKASSA_TEST_MODE = True
+ROBOKASSA_TEST_MODE = False
 ROBOKASSA_TEST_FORM_TARGET = 'https://auth.robokassa.ru/Merchant/Index.aspx'
 
 # Application definition

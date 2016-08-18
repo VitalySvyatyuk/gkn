@@ -17,6 +17,10 @@ try:
 except:
     print "I am unable to connect to the database"
 
+5. Delete migrations:
+
+rm -r 000* __init__.pyc /app/.heroku/python/lib/python2.7/site-packages/robokassa/migrations/
+
 
 3. КЛЮЧИ ДОСТУПА  --   ГКН с 25.06.2015 г. - b087df48-7b97-485a-b2ce-b4a35f214e79
                       ЕГРП с 17.05.2016 г. - 053cab9a-3fe7-4ceb-a39f-58e96aed16cd
