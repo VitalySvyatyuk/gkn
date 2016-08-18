@@ -5,7 +5,22 @@
 
 2. Use RoboKassa: https://bitbucket.org/TheDeadOne/django-robokassa
 
+3. адрес сайта - safe-badlands-97323.herokuapp.com
+
+4. добавить запись в бд postgres: 
+
+python
+import psycopg2
+try:
+    conn = psycopg2.connect("dbname='dbt00ev715353g' user='ywlfidjtgdwpyo' host='ec2-54-204-37-135.compute-1.amazonaws.com' password='VeQ8mz8KrWGQYJNaSJgOVw57u9'")
+    print "Ok"
+except:
+    print "I am unable to connect to the database"
+
+
 3. КЛЮЧИ ДОСТУПА  --   ГКН с 25.06.2015 г. - b087df48-7b97-485a-b2ce-b4a35f214e79
                       ЕГРП с 17.05.2016 г. - 053cab9a-3fe7-4ceb-a39f-58e96aed16cd
+
+
 
 
