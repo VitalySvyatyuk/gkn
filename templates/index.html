@@ -22,27 +22,30 @@
 		<div class="tab-content">
 
   		<div class="row tab-pane fade in active background" id="EGRP" role="tabpanel">
-        <div class="col-md-1"></div>
-        <div class="col-md-4 formmargin">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-4 col-md-4 col-sm-5 formmargin">
           {% include "form_EGRP_addr.html" %}
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-4 questiontop">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-4 col-md-4 col-sm-5 questiontop">
           {% include "questions.html" %}
         </div>
-        <div class="col-md-1"></div>
+        <div class="col-lg-1 col-md-1"></div>
   		</div>
 
       <div class="row tab-pane fade background" id="GKN" role="tabpanel">
-        <div class="col-md-1"></div>
-        <div class="col-md-4 questiontop">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-4 col-md-4 col-sm-5 hidden-xs questiontop">
           {% include "questions.html" %}
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-4 formmargin">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-4 col-md-4 col-sm-5 formmargin">
           {% include "form_GKN_addr.html" %}
         </div>
-        <div class="col-md-1"></div>
+        <div class="hidden-lg hidden-md hidden-sm lastquestion">
+          {% include "questions.html" %}
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
       </div>
 
 		</div>

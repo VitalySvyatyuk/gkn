@@ -36,10 +36,7 @@
     background-color:hsla(204, 100%, 50%, 0.435);
 }
 
-/*.h4 {
-    margin: 15px 15px;
-    border-radius: 5px;
-}*/
+
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover,
 .background {
@@ -51,6 +48,19 @@
     border-bottom-color: #ffc;
 }
 
+/*3 nav-tabs for the same width of the table-cells nav-tabs*/
+.nav-tabs{
+    display: flex;
+}
+.nav-tabs li {
+    display: flex;
+    flex: 1;
+}
+
+.nav-tabs li  a {
+    flex: 1;
+}
+
 .formmargin {
     margin: 15px 0px 15px 0px;
 }
@@ -59,7 +69,31 @@
     margin-top: 25px;
 }
 
+.lastquestion {
+    margin-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .row {
     margin-left: 0px;
     margin-right: 0px;
+}
+
+/*this is for xs size nav tabs preventes stacking*/
+@media (max-width: 768px) {
+  .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-justified > li > a  {
+    border-bottom: 1px solid #ddd !important;
+    border-radius: 4px 4px 0 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #ffc !important;
+  }
 }
